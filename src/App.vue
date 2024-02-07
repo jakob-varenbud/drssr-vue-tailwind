@@ -1,11 +1,14 @@
 <template>
   <Popover>
+    <!-- Nav -->
     <Navbar />
-    <!-- Weitere Inhalte Ihrer App -->
+    <!-- Header -->
+    <RepairComponent />
   </Popover>
 </template>
 
 <script setup>
 import { Popover } from "@headlessui/vue";
 import Navbar from "./components/Navbar.vue";
+import RepairComponent from "./components/Header.vue";
 </script>
