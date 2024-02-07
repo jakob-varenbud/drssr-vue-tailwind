@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col md:flex-row md:justify-between bg-white p-6">
+  <div
+    class="flex flex-col md:flex-row md:justify-between bg-white p-6 font-dm-sans"
+  >
     <div>
       <div class="text-green-500 text-sm">★★★★☆ Trustpilot</div>
       <h2 class="text-2xl font-bold text-gray-800 my-2">DRS Smart Repair</h2>
@@ -54,7 +56,7 @@
           Einfach Foto schicken und zum Festpreis reparieren lassen
         </li>
       </ul>
-      <a href="#" class="inline-block bg-red-500 text-white py-2 px-4 rounded"
+      <a href="#" class="inline-block bg-drs-red text-white py-2 px-4 rounded"
         >Zur Anfrage in 3 Schritten</a
       >
     </div>

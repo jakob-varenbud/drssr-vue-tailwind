@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "dm-sans": ["DM Sans", "sans-serif"],
+        sans: ["DM Sans", "sans-serif"],
       },
       fontWeight: {
         light: 300,
