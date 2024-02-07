@@ -1,10 +1,8 @@
 <template>
   <div class="min-h-svh w-svw flex justify-between">
-    <div class="flex flex-col justify-center">
-      <h1 class="mb-4">
-        DRS Smart Repair
-        <span class="block sm:inline">Kleine Schäden schnell beheben</span>
-      </h1>
+    <div class="flex flex-col justify-center w-1/2">
+      <h1>DRS Smart Repair</h1>
+      <h2 class="mb-4">Kleine Schäden schnell beheben</h2>
       <div class="flex items-center space-x-2">
         <img
           class="h-6 w-6"
@@ -60,6 +58,14 @@
           class="h-20"
         />
       </div>
+    </div>
+    <div class="flex flex-col justify-center w-1/2">
+      <div
+        class="bg-cover bg-center rounded-2xl h-3/4"
+        style="
+          background-image: url('https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/659e9db5fb95e3e30645b49f_drs-smartrepair.de%20Hero%20image_4%20(1).png');
+        "
+      ></div>
     </div>
   </div>
 </template>
