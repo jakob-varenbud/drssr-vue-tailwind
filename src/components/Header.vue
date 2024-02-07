@@ -1,12 +1,10 @@
 <template>
-  <div
-    class="flex flex-col md:flex-row md:justify-between bg-white p-6 font-dm-sans"
-  >
+  <div class="flex flex-col md:flex-row md:justify-between p-6">
     <div>
       <div class="text-green-500 text-sm">★★★★☆ Trustpilot</div>
-      <h2 class="text-2xl font-bold text-gray-800 my-2">DRS Smart Repair</h2>
-      <p class="text-lg text-gray-700">Kleine Schäden schnell beheben.</p>
-      <ul class="my-4">
+      <h2 class="text-2xl font-bold mt-2">DRS Smart Repair</h2>
+      <p class="text-lg">Kleine Schäden schnell beheben.</p>
+      <div class="my-4">
         <li class="flex items-center">
           <svg
             class="h-4 w-4 text-green-500 mr-2"
@@ -21,7 +19,9 @@
               d="M5 13l4 4L19 7"
             />
           </svg>
-          Für Parkschäden, Dellen, Kratzer, Steinschläge und Innenraum
+          <div class="text-sm">
+            Für Parkschäden, Dellen, Kratzer, Steinschläge und Innenraum
+          </div>
         </li>
         <li class="flex items-center">
           <svg
@@ -37,7 +37,7 @@
               d="M5 13l4 4L19 7"
             />
           </svg>
-          Kostengünstig und schnell
+          <div class="text-sm">Kostengünstig und schnell</div>
         </li>
         <li class="flex items-center">
           <svg
@@ -53,12 +53,18 @@
               d="M5 13l4 4L19 7"
             />
           </svg>
-          Einfach Foto schicken und zum Festpreis reparieren lassen
+          <div class="text-sm">
+            Einfach Foto schicken und zum Festpreis reparieren lassen
+          </div>
         </li>
-      </ul>
-      <a href="#" class="inline-block bg-drs-red text-white py-2 px-4 rounded"
-        >Zur Anfrage in 3 Schritten</a
-      >
+      </div>
+      <button>
+        <a
+          href="#"
+          class="inline-block bg-drs-red text-white py-2 px-8 rounded-3xl"
+          >Zur Anfrage in 3 Schritten</a
+        >
+      </button>
     </div>
   </div>
 
