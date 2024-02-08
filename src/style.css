@@ -9,3 +9,7 @@ h2 {
   color: #333;
   @apply text-3xl font-bold;
 }
+
+.height-hero {
+  height: 80vh;
+}
