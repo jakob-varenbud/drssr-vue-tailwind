@@ -1,12 +1,10 @@
 <template>
-  <div class="p-3 md:p-8">
-    <Popover>
-      <!-- Nav -->
-      <Navbar />
-      <!-- Header -->
-      <RepairComponent />
-    </Popover>
-  </div>
+  <Popover>
+    <!-- Nav -->
+    <Navbar />
+    <!-- Header -->
+    <RepairComponent />
+  </Popover>
 </template>
 
 <script setup>
