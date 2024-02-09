@@ -2,15 +2,17 @@
   <div>
     <!-- Render the current step -->
     <div v-if="step === 1">
-      <div v-for="checkbox in checkboxData" :key="checkbox.id">
-        <input
-          type="checkbox"
-          :id="checkbox.id"
-          :value="checkbox.id"
-          :checked="selectedCheckboxes.includes(checkbox.id)"
-          @change="handleCheckboxChange(checkbox.id)"
-        />
-        <label :for="checkbox.id">{{ checkbox.label }}</label>
+      <div class="grid grid-cols-2">
+        <div class="flex" v-for="checkbox in checkboxData" :key="checkbox.id">
+          <input
+            type="checkbox"
+            :id="checkbox.id"
+            :value="checkbox.id"
+            :checked="selectedCheckboxes.includes(checkbox.id)"
+            @change="handleCheckboxChange(checkbox.id)"
+          />
+          <label :for="checkbox.id">{{ checkbox.label }}</label>
+        </div>
       </div>
       <button @click="step++">Next</button>
     </div>

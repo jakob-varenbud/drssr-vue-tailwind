@@ -13,3 +13,7 @@ h2 {
 .height-hero {
   height: 90vh;
 }
+button {
+  min-width: auto;
+  @apply font-bold bg-drs-red p-6 rounded-2xl text-white;
+}
