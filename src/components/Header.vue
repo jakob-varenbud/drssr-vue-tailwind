@@ -1,6 +1,6 @@
 <template>
   <div class="container size-full max-w-7xl ml-auto mr-auto">
-    <div class="height-hero flex flex-col lg:flex-row justify-between gap-12">
+    <div class="height-hero flex flex-col lg:flex-row justify-between gap-2">
       <div class="flex flex-col justify-center w-full lg:w-1/2">
         <h1>DRS Smart Repair</h1>
         <h2 class="mb-4">Kleine Schäden schnell beheben</h2>
@@ -72,7 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col justify-center w-full h-56">
+      <div class="flex flex-col justify-center w-full h-full">
         <div
           class="bg-cover rounded-2xl h-3/4"
           style="
