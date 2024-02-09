@@ -1,7 +1,7 @@
 <template>
   <div class="container size-full max-w-7xl ml-auto mr-auto">
-    <div class="height-hero flex justify-between gap-12">
-      <div class="flex flex-col justify-center w-1/2">
+    <div class="height-hero flex flex-col lg:flex-row justify-between gap-12">
+      <div class="flex flex-col justify-center w-full lg:w-1/2">
         <h1>DRS Smart Repair</h1>
         <h2 class="mb-4">Kleine Schäden schnell beheben</h2>
         <div class="flex items-center space-x-2">
@@ -35,34 +35,44 @@
           >In 3 Schritten zur Anfrage</a
         >
         <div class="flex">
-          <img
-            src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50e3b8bf9fbe2a94e92a3_top%20100.webp"
-            alt="Top 100"
-            class="h-20"
-          />
-          <img
-            src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50c6718beef84d30933cd_dekra.webp"
-            alt="Top 100"
-            class="h-20"
-          />
-          <img
-            src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50d3bca52f1ecc2c2118e_top100.webp"
-            alt="Top 100"
-            class="h-20"
-          />
-          <img
-            src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50738720955c1febb2e07_klimaneurtral.webp"
-            alt="Top 100"
-            class="h-20"
-          />
-          <img
-            src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/645b5a154160e449669b3d67_top_service-new.png"
-            alt="Top 100"
-            class="h-20"
-          />
+          <div class="w-16 h-12 relative lg:h-20">
+            <img
+              src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50e3b8bf9fbe2a94e92a3_top%20100.webp"
+              alt="Top 100"
+              class="object-contain w-full h-full"
+            />
+          </div>
+          <div class="w-16 h-12 relative lg:h-20">
+            <img
+              src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50e3b8bf9fbe2a94e92a3_top%20100.webp"
+              alt="Top 100"
+              class="object-contain w-full h-full"
+            />
+          </div>
+          <div class="w-16 h-12 relative lg:h-20">
+            <img
+              src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50e3b8bf9fbe2a94e92a3_top%20100.webp"
+              alt="Top 100"
+              class="object-contain w-full h-full"
+            />
+          </div>
+          <div class="w-16 h-12 relative lg:h-20">
+            <img
+              src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50e3b8bf9fbe2a94e92a3_top%20100.webp"
+              alt="Top 100"
+              class="object-contain w-full h-full"
+            />
+          </div>
+          <div class="w-16 h-12 relative lg:h-20">
+            <img
+              src="https://uploads-ssl.webflow.com/642d8b6e384132be9f422e44/64b50e3b8bf9fbe2a94e92a3_top%20100.webp"
+              alt="Top 100"
+              class="object-contain w-full h-full"
+            />
+          </div>
         </div>
       </div>
-      <div class="flex flex-col justify-center w-1/2">
+      <div class="flex flex-col justify-center w-full h-56">
         <div
           class="bg-cover rounded-2xl h-3/4"
           style="
