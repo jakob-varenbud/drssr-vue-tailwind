@@ -3,6 +3,7 @@
     <!-- Render the current step -->
     <div v-if="step === 1">
       <div class="grid grid-cols-2">
+        <!--for each lopp - v-for -->
         <div class="flex" v-for="checkbox in checkboxData" :key="checkbox.id">
           <input
             type="checkbox"
@@ -11,6 +12,7 @@
             :checked="selectedCheckboxes.includes(checkbox.id)"
             @change="handleCheckboxChange(checkbox.id)"
           />
+          <!-- v-bind : and {{  }} for rendering dynamic value like checbockbox data-->
           <label :for="checkbox.id">{{ checkbox.label }}</label>
         </div>
       </div>
