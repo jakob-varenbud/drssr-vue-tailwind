@@ -2,9 +2,13 @@
   <div>
     <!-- Render the current step -->
     <div v-if="step === 1">
-      <div class="grid grid-cols-2">
-        <!--for each lopp - v-for -->
-        <div class="flex" v-for="checkbox in checkboxData" :key="checkbox.id">
+      <div class="grid grid-cols-2 mb-4">
+        <!--for each lopp like v-for -->
+        <div
+          class="flex gap-2"
+          v-for="checkbox in checkboxData"
+          :key="checkbox.id"
+        >
           <input
             type="checkbox"
             :id="checkbox.id"
@@ -16,7 +20,7 @@
           <label :for="checkbox.id">{{ checkbox.label }}</label>
         </div>
       </div>
-      <button @click="step++">Next</button>
+      <button :disabled="!isStepOneComplete" @click="step++">Next</button>
     </div>
 
     <div v-if="step === 2">
@@ -50,13 +54,13 @@
         placeholder="Your message"
       />
       <button @click="step--">Back</button>
-      <button @click="step++">Next</button>
+      <button :disabled="!isStepTwoComplete" @click="step++">Next</button>
     </div>
   </div>
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 export default {
   setup() {
@@ -76,7 +80,6 @@ export default {
       { id: 3, label: "Innenraum" },
       { id: 4, label: "Felge" },
       { id: 5, label: "Hagelschaden" },
-      // ... other checkbox data
     ];
 
     const handleCheckboxChange = (checkboxId) => {
@@ -88,11 +91,28 @@ export default {
       }
     };
 
+    // Berechnete Eigenschaft, die prüft, ob Bedingungen für Schritt 1 erfüllt sind
+    const isStepOneComplete = computed(() => {
+      return selectedCheckboxes.value.length > 0;
+    });
+
+    // Für Schritt 2, prüfen Sie, ob alle erforderlichen Felder ausgefüllt sind
+    const isStepTwoComplete = computed(() => {
+      return (
+        formData.value.preName &&
+        formData.value.name &&
+        formData.value.email &&
+        formData.value.phone
+      );
+    });
+
     return {
       step,
       selectedCheckboxes,
       formData,
       checkboxData,
+      isStepOneComplete,
+      isStepTwoComplete,
       handleCheckboxChange,
     };
   },
