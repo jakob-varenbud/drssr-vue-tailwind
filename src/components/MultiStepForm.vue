@@ -53,8 +53,7 @@
         v-model="formData.message"
         placeholder="Your message"
       />
-      <button @click="step--">Back</button>
-      <button :disabled="!isStepTwoComplete" @click="step++">Next</button>
+      <button :disabled="!isStepTwoComplete" @click="submitForm">Submit</button>
     </div>
   </div>
 </template>
@@ -106,6 +105,11 @@ export default {
       );
     });
 
+    const submitForm = () => {
+      console.log("Formular Daten:", formData.value);
+      // Hier könnten Sie weitere Aktionen durchführen, wie z.B. die Daten an einen Server senden
+    };
+
     return {
       step,
       selectedCheckboxes,
@@ -114,6 +118,7 @@ export default {
       isStepOneComplete,
       isStepTwoComplete,
       handleCheckboxChange,
+      submitForm,
     };
   },
 };
