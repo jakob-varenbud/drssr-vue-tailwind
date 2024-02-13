@@ -16,8 +16,6 @@ dist-ssr
 
 # Local development specific files
 *.local
-src/.env # Hinzugefügt, um .env-Dateien zu ignorieren
-.env # Hinzugefügt, um .env-Dateien zu ignorieren
 
 # Editor directories and files
 .vscode/*
